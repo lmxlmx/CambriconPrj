@@ -1,0 +1,12 @@
+sudo: required
+language: bash
+dist: xential
+
+jobs:
+  include:
+  - arch: amd64
+
+script:
+  - cd GH_Test && mkdir build && cd build && cmake .. && make -j 8
+after_script:
+  - ls && ./video_decode

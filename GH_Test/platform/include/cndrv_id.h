@@ -1,0 +1,62 @@
+#ifndef CALLBACKAPI_CNDRV_ID_H_
+#define CALLBACKAPI_CNDRV_ID_H_
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+typedef enum {
+  CNPAPI_CNDRV_TRACE_CBID_mluInit,
+  CNPAPI_CNDRV_TRACE_CBID_mluExit,
+  CNPAPI_CNDRV_TRACE_CBID_mluGetDeviceCount,
+  CNPAPI_CNDRV_TRACE_CBID_mluDeviceGet,
+  CNPAPI_CNDRV_TRACE_CBID_mluDeviceGetName,
+  CNPAPI_CNDRV_TRACE_CBID_mluDeviceGetAttribute,
+  CNPAPI_CNDRV_TRACE_CBID_mluDeviceOpen,
+  CNPAPI_CNDRV_TRACE_CBID_mluDeviceClose,
+  CNPAPI_CNDRV_TRACE_CBID_mluDriverGetVersion,
+  CNPAPI_CNDRV_TRACE_CBID_mluGetErrorName,
+  CNPAPI_CNDRV_TRACE_CBID_mluGetErrorString,
+  CNPAPI_CNDRV_TRACE_CBID_mluGetMaxQueueCount,
+  CNPAPI_CNDRV_TRACE_CBID_mluCreateQueue,
+  CNPAPI_CNDRV_TRACE_CBID_mluCreateQueueWithPriority,
+  CNPAPI_CNDRV_TRACE_CBID_mluDestroyQueue,
+  CNPAPI_CNDRV_TRACE_CBID_mluQueryQueue,
+  CNPAPI_CNDRV_TRACE_CBID_mluQueueSync,
+  CNPAPI_CNDRV_TRACE_CBID_mluQueueWaitNotifier,
+  CNPAPI_CNDRV_TRACE_CBID_mluCreateNotifier,
+  CNPAPI_CNDRV_TRACE_CBID_mluDestroyNotifier,
+  CNPAPI_CNDRV_TRACE_CBID_mluWaitNotifier,
+  CNPAPI_CNDRV_TRACE_CBID_mluQueryNotifier,
+  CNPAPI_CNDRV_TRACE_CBID_mluPlaceNotifyNotifier,
+  CNPAPI_CNDRV_TRACE_CBID_mluNotifierElapsedTime,
+  CNPAPI_CNDRV_TRACE_CBID_mluMemcpyHtoDAsync,
+  CNPAPI_CNDRV_TRACE_CBID_mluMemcpyDtoHAsync,
+  CNPAPI_CNDRV_TRACE_CBID_mluMemcpyPeerAsync,
+  CNPAPI_CNDRV_TRACE_CBID_mluMemcpyPeer2PeerAsync,
+  CNPAPI_CNDRV_TRACE_CBID_mluIpcGetNotifierHandle,
+  CNPAPI_CNDRV_TRACE_CBID_mluIpcOpenNotifierHandle,
+  CNPAPI_CNDRV_TRACE_CBID_mluMallocHost,
+  CNPAPI_CNDRV_TRACE_CBID_mluFreeHost,
+  CNPAPI_CNDRV_TRACE_CBID_mluDeviceTotalMem,
+  CNPAPI_CNDRV_TRACE_CBID_mluMalloc,
+  CNPAPI_CNDRV_TRACE_CBID_mluMemset,
+  CNPAPI_CNDRV_TRACE_CBID_mluZmalloc,
+  CNPAPI_CNDRV_TRACE_CBID_mluMallocConstant,
+  CNPAPI_CNDRV_TRACE_CBID_mluMallocFrameBuffer,
+  CNPAPI_CNDRV_TRACE_CBID_mluMemMerge,
+  CNPAPI_CNDRV_TRACE_CBID_mluFree,
+  CNPAPI_CNDRV_TRACE_CBID_mluMemcpyHtoD,
+  CNPAPI_CNDRV_TRACE_CBID_mluMemcpyDtoH,
+  CNPAPI_CNDRV_TRACE_CBID_mluMemcpyPeerAble,
+  CNPAPI_CNDRV_TRACE_CBID_mluMemcpyPeer2Peer,
+  CNPAPI_CNDRV_TRACE_CBID_mluMemcpyDtoD,
+  CNPAPI_CNDRV_TRACE_CBID_mluIpcGetMemHandle,
+  CNPAPI_CNDRV_TRACE_CBID_mluIpcOpenMemHandle,
+  CNPAPI_CNDRV_TRACE_CBID_mluIpcCloseMemHandle,
+  CNPAPI_CNDRV_TRACE_CBID_SIZE
+} cnpapi_CallbackIdCNDRV;
+#ifdef __cplusplus
+}
+#endif
+
+#endif
